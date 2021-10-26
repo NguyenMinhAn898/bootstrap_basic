@@ -47,7 +47,7 @@ a {
 
 .header {
     position: relative;
-    background-image: url('../images/headerback.jpg');
+    background-image: url('https://picsum.photos/300/200');
     background-size: cover;
     background-position: center;
 }
@@ -133,7 +133,7 @@ a {
 
 .portfolio h1 {
     color: #F97300;
-    margin: 2em;
+    margin: 2em 1em 1em 1em;
 }
 
 .portfolio img {
@@ -152,7 +152,7 @@ a {
 
 .blog h1 {
     color: #F97300;
-    margin: 2em;
+    margin: 2em 1em 1em 1em;
 }
 
 .blog .card {
@@ -172,6 +172,13 @@ a {
     padding: 1em;
 }
 
+.blog .card .card-link {
+    text-decoration: none
+}
+
+
+/* Team style */
+
 .team {
     margin: 4em 0;
     position: relative;
@@ -184,38 +191,33 @@ a {
 
 .team .item {
     position: relative;
-    overflow: hidden;
 }
 
-.image-team {
-    display: block;
-    height: 250px;
-    min-width: 220px;
+.item img {
     width: 100%;
 }
 
 .team .des {
     background: #F97300;
     color: #fff;
+    width: 100%;
     text-align: center;
-    border-top-right-radius: 93%;
-    /* border-bottom-left-radius: 93%; */
+    border-bottom-left-radius: 93%;
     transition: .3s ease-in-out;
-    position: absolute;
-    width: 93%;
-    bottom: 24px;
 }
 
 .team .item:hover .des {
-    height: 100%;
     background: #f973007d;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    padding: 7em;
-    /* top: 0; */
-    border-bottom-left-radius: 0;
-    /* border-top-right-radius: 0; */
-    /* border-bottom-left-radius: 80px 80px 0 0; */
+    padding: 2em;
+    top: 250;
+    border-bottom-left-radius: 120px;
+}
+
+.team .item:hover .text-muted {
+    color: #f4f4f4 !important;
+    background: #f4f4f4;
 }
 
 
@@ -248,4 +250,20 @@ a {
 .contact-form .right .form-control::placeholder {
     color: #888;
     font-size: 16px;
+}
+
+.mrl-25 {
+    margin-left: 25px;
+}
+
+.mrl-15 {
+    margin-left: 15px;
+}
+
+.mrr-25 {
+    margin-right: 25px !important;
+}
+
+.mrr-50 {
+    margin-right: 50px !important;
 }
